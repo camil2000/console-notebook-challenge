@@ -39,6 +39,8 @@ class Notebook:
         self.notes.append(new_note)
         return new_code
 
+    def delete_note
+
 
 
 
