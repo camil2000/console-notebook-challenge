@@ -28,6 +28,16 @@ class Notebook:
     def __init__(self):
         self.notes: list[Note] = []
 
+    def add_note(self, title: str, text: str, importance: str) -> int:
+        if not self.notes:
+            new_code = 1
+
+        else:
+            new_code = max(int(node.code) for node in self.notes) + 1
+
+        new_note = Note(new_code, title, text, importance)
+        self.notes.append(new_note)
+        return new_code
 
 
 
