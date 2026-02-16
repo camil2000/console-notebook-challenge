@@ -21,3 +21,14 @@ class Note:
         if tag not in self.tags:
             self.tags.append(tag)
 
+    def __str__(self):
+        return f"Data: {self.creation_date}, {self.title}: {self.text}"
+
+class Notebook:
+    def __init__(self):
+        self.notes: list[Note] = []
+
+
+
+
+
